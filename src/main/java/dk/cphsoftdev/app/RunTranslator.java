@@ -8,14 +8,18 @@ public class RunTranslator
 {
     public static void main( String[] args )
     {
-        ReceiveController receive = new ReceiveController( "group3.bank.normalizator" );
-        SenderController sender = new SenderController( "cphbusiness.bankJSON", "", "group3.bank.normalizator" );
+//        ReceiveController receive = new ReceiveController( "group3.bank.normalizator" );
+//        SenderController sender = new SenderController( "cphbusiness.bankJSON", "", "group3.bank.normalizator" );
+//
+//        sender.sendMessage( new Translator( "1209855372,500,12000.0,48" ).toJSON() );
+//        receive.printMessages();
+//
+//        sender.close();
+//        receive.close();
 
-        sender.sendMessage( new Translator( "1209855372,500,12000.0,48" ).toJSON() );
+        ReceiveController receive = new ReceiveController( "group3.reciplist.jsontranslator" );
         receive.printMessages();
-
-        sender.close();
-        receive.close();
+       // receive.close();
 
         // Start Translator (On production use this)
         // -----------------------------------------------------------------------------------------------
